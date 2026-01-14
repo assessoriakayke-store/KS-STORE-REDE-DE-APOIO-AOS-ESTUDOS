@@ -4,63 +4,117 @@
   <meta charset="UTF-8">
   <title>KS Store - Rede de Estudos</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <style>
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
+      font-family: Arial, Helvetica, sans-serif;
       background: #f4f6f8;
       color: #333;
     }
+
     header {
       background: linear-gradient(90deg, #1e3c72, #2a5298);
       color: white;
-      padding: 20px;
+      padding: 30px 20px;
       text-align: center;
     }
+
+    nav {
+      margin-top: 15px;
+    }
+
     nav a {
       color: white;
       margin: 0 15px;
       text-decoration: none;
       font-weight: bold;
     }
+
     section {
-      padding: 40px 20px;
-      max-width: 1000px;
+      padding: 50px 20px;
+      max-width: 1100px;
       margin: auto;
     }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 10px;
+      color: #1e3c72;
+    }
+
+    .subtitle {
+      text-align: center;
+      margin-bottom: 40px;
+      color: #555;
+    }
+
     .cards {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
+      gap: 25px;
     }
+
     .card {
       background: white;
-      padding: 20px;
-      border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      display: flex;
+      flex-direction: column;
     }
+
+    .card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 20px;
+      flex-grow: 1;
+    }
+
+    .card-content h3 {
+      margin-top: 0;
+      color: #2a5298;
+    }
+
+    .card-content p {
+      font-size: 14px;
+      line-height: 1.5;
+    }
+
+    .btn {
+      display: block;
+      background: #2a5298;
+      color: white;
+      text-align: center;
+      padding: 12px;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 0 0 10px 10px;
+    }
+
+    .btn:hover {
+      background: #1e3c72;
+    }
+
     footer {
       background: #1e3c72;
       color: white;
       text-align: center;
-      padding: 15px;
-    }
-    .btn {
-      display: inline-block;
-      background: #2a5298;
-      color: white;
-      padding: 10px 20px;
-      border-radius: 5px;
-      text-decoration: none;
-      margin-top: 10px;
+      padding: 20px;
+      margin-top: 40px;
     }
   </style>
 </head>
+
 <body>
 
 <header>
   <h1>KS Store - Rede de Estudos</h1>
-  <p>Sua plataforma de cursos e apostilas para transformar seus estudos</p>
+  <p>Sua plataforma de cursos e apostilas digitais</p>
   <nav>
     <a href="#">Início</a>
     <a href="#">Cursos</a>
@@ -70,33 +124,63 @@
 </header>
 
 <section>
-  <h2>📚 O que oferecemos</h2>
-  <div class="cards">
-    <div class="card">
-      <h3>Cursos Gravados</h3>
-      <p>Conteúdos completos e atualizados para você estudar no seu ritmo.</p>
-      <a class="btn" href="#">Ver cursos</a>
-    </div>
-   <div class="card">
-  <h3>📘 Apostilas Digitais</h3>
-  <p>
-    Apostilas em PDF, organizadas por tema e nível, ideais para estudo
-    autônomo e revisão de conteúdo.
+  <h2>📚 Sobre a KS Store</h2>
+  <p class="subtitle">
+    Conectamos você aos melhores cursos e materiais digitais por meio de
+    indicações confiáveis e plataformas seguras como a Eduzz.
   </p>
-  <p><strong>Entrega:</strong> 100% digital</p>
-  <a class="btn" href="https://p.eduzz.com/2304049?a=55465457">Ver apostilas</a>
-    </div>
+</section>
+
+<section>
+  <h2>🛒 Cursos em Destaque</h2>
+  <p class="subtitle">Escolha o curso ideal e comece agora</p>
+
+  <div class="cards">
+
     <div class="card">
-      <h3>Rede de Apoio</h3>
-      <p>Indicações de conteúdos educacionais através da Eduzz.</p>
-      <a class="btn" href="#">Saiba mais</a>
+      <img src="https://images.unsplash.com/photo-1584697964154-f07bfc8e3c6f" alt="Curso ENEM">
+      <div class="card-content">
+        <h3>Curso ENEM Completo</h3>
+        <p>Videoaulas gravadas, exercícios e materiais de apoio para sua aprovação.</p>
+      </div>
+      <a class="btn" href="LINK_EDUZZ_ENEM">Acessar curso</a>
     </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1528740561666-dc2479dc08ab" alt="Curso Jurídico">
+      <div class="card-content">
+        <h3>Curso Área Jurídica</h3>
+        <p>Preparação para concursos e prática jurídica com conteúdo atualizado.</p>
+      </div>
+      <a class="btn" href="LINK_EDUZZ_JURIDICO">Acessar curso</a>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1556761175-4b46a572b786" alt="Curso Administração">
+      <div class="card-content">
+        <h3>Curso Administração</h3>
+        <p>Gestão, empreendedorismo e fundamentos administrativos.</p>
+      </div>
+      <a class="btn" href="LINK_EDUZZ_ADMIN">Acessar curso</a>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b" alt="Desenvolvimento Pessoal">
+      <div class="card-content">
+        <h3>Desenvolvimento Pessoal</h3>
+        <p>Organização, produtividade e foco nos estudos.</p>
+      </div>
+      <a class="btn" href="LINK_EDUZZ_DP">Acessar curso</a>
+    </div>
+
   </div>
 </section>
 
 <section>
-  <h2>💳 Pagamento fácil</h2>
-  <p>Aceitamos pagamentos via <strong>Pix</strong> e <strong>cartão</strong> através de plataformas seguras.</p>
+  <h2>💳 Pagamento Seguro</h2>
+  <p class="subtitle">
+    Pagamentos via Pix e cartão, com segurança garantida pelas plataformas parceiras.
+  </p>
 </section>
 
 <footer>
@@ -105,5 +189,3 @@
 
 </body>
 </html>
-
-
