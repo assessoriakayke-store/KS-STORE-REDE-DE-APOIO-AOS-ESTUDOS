@@ -1,47 +1,104 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<title>KS Store – Rede de Estudos</title>
-<link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <title>KS Store - Rede de Estudos</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f6f8;
+      color: #333;
+    }
+    header {
+      background: linear-gradient(90deg, #1e3c72, #2a5298);
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    footer {
+      background: #1e3c72;
+      color: white;
+      text-align: center;
+      padding: 15px;
+    }
+    .btn {
+      display: inline-block;
+      background: #2a5298;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      margin-top: 10px;
+    }
+  </style>
 </head>
 <body>
 
 <header>
-<nav>
-<h1>KS Store</h1>
-<ul>
-<li><a href="index.html">Início</a></li>
-<li><a href="cursos.html">Cursos</a></li>
-<li><a href="apostilas.html">Apostilas</a></li>
-<li><a href="sobre.html">Sobre</a></li>
-<li><a href="contato.html">Contato</a></li>
-</ul>
-</nav>
+  <h1>KS Store - Rede de Estudos</h1>
+  <p>Sua plataforma de cursos e apostilas para transformar seus estudos</p>
+  <nav>
+    <a href="#">Início</a>
+    <a href="#">Cursos</a>
+    <a href="#">Apostilas</a>
+    <a href="#">Contato</a>
+  </nav>
 </header>
 
 <section>
-<h2>KS Store – Rede de Estudos</h2>
-<p>
-Conectamos você aos melhores cursos e apostilas digitais para ENEM,
-concursos, reforço escolar, produtividade e Administração.
-</p>
+  <h2>📚 O que oferecemos</h2>
+  <div class="cards">
+    <div class="card">
+      <h3>Cursos Gravados</h3>
+      <p>Conteúdos completos e atualizados para você estudar no seu ritmo.</p>
+      <a class="btn" href="#">Ver cursos</a>
+    </div>
+    <div class="card">
+      <h3>Apostilas Digitais</h3>
+      <p>Materiais organizados para reforçar seus estudos.</p>
+      <a class="btn" href="#">Ver apostilas</a>
+    </div>
+    <div class="card">
+      <h3>Rede de Apoio</h3>
+      <p>Indicações de conteúdos educacionais através da Eduzz.</p>
+      <a class="btn" href="#">Saiba mais</a>
+    </div>
+  </div>
 </section>
 
 <section>
-<h2>Escolha seu objetivo</h2>
-<div class="card-container">
-<a class="card" href="enem.html"><h3>ENEM</h3><p>Preparação completa</p></a>
-<a class="card" href="concursos.html"><h3>Concursos</h3><p>Foco em aprovação</p></a>
-<a class="card" href="reforco.html"><h3>Reforço Escolar</h3><p>Base forte</p></a>
-<a class="card" href="produtividade.html"><h3>Produtividade</h3><p>Organização</p></a>
-<a class="card" href="administracao.html"><h3>Administração</h3><p>Graduação e concursos</p></a>
-</div>
+  <h2>💳 Pagamento fácil</h2>
+  <p>Aceitamos pagamentos via <strong>Pix</strong> e <strong>cartão</strong> através de plataformas seguras.</p>
 </section>
 
 <footer>
-<p>KS Store atua como afiliada Eduzz. Venda e entrega sob responsabilidade da plataforma.</p>
+  <p>© 2026 KS Store - Rede de Estudos</p>
 </footer>
 
 </body>
 </html>
+
