@@ -59,3 +59,26 @@ footer {
   text-align: center;
   padding: 15px;
 }
+
+.pagina-curso {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.pagina-curso img {
+  width: 100%;
+  max-height: 350px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin: 20px 0;
+}
+
+.pagina-curso ul {
+  margin: 20px 0;
+  list-style: none;
+}
+
+.pagina-curso li {
+  margin-bottom: 8px;
+}
